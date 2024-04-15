@@ -7,7 +7,11 @@
     height: 100%;
     /* Đảm bảo các thẻ card trong khung sản phẩm có chiều cao như nhau */
 }
-
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
 .card-img-top {
     height: 200px;
     /* Thiết lập chiều cao cố định cho ảnh */
@@ -26,7 +30,7 @@
 .container a:hover {
     background-color: #115133;
     color: #ffffff;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 .a-auth{
     padding: 0 8px 5px;
@@ -121,23 +125,33 @@
 }
 
 .pagination a {
-    color: #007bff; /* Màu chữ */
+    color: #115133; /* Màu chữ */
     text-decoration: none; /* Gỡ bỏ gạch chân dưới */
-    margin: 0 20px; /* Khoảng cách giữa các nút */
-    padding: 15px 30px;    /* Kích thước của nút */
-    border: 1px solid #007bff; /* Viền của nút */
+    margin: 0 20px; /* Khoảng cách giữa các nút */    /* Kích thước của nút */
+    border: 1px solid #115133; /* Viền của nút */
     border-radius: 5px; /* Bo góc */
     transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi */
     font-size: 25px;
 }
 
 .pagination a:hover {
-    background-color: #007bff; /* Màu nền khi di chuột qua */
+    background-color: #115133; /* Màu nền khi di chuột qua */
     color: #fff; /* Màu chữ khi di chuột qua */
 }
 
 .pagination a.active {
-    background-color: #007bff; /* Màu nền của nút đang chọn */
+    background-color: #115133; /* Màu nền của nút đang chọn */
     color: #fff; /* Màu chữ của nút đang chọn */
     pointer-events: none; /* Ngăn người dùng nhấp vào nút đang chọn */
+}
+.ptrang a{
+    width: 50px;
+    margin: 0 3px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+.ptrang a:hover {
+    background-color: #115133;
+    border-radius: 5px;
+    border: 1px solid #333;
 }

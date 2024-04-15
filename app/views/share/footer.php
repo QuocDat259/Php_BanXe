@@ -3,7 +3,7 @@
 <!-- Sidebar -->
 <div class="col-md-3">
     <div class="banner">
-        <img src="app/image/banner.png" style="width: 100%; height: auto;" />
+        <img src="https://i.imgur.com/kAzaWDH.png" style="width: 100%; height: auto;" />
     </div>
 
 </div>
@@ -11,7 +11,7 @@
 </div>
 </div>
 <!-- Phần footer -->
-<div class=" mt-4 " style="background-color:#fa5230">
+<div class=" mt-4 " style="background-color:#198754">
     <div class="row">
         <div class="col-md-4">
             <div class=" text-white text-center py-4">
@@ -39,16 +39,11 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 text-center py-4">
-            <!-- Thẻ div để chứa bản đồ -->
-            <div id="map" style="height: 300px;">
-                <!-- Nhúng iframe của Google Maps vào đây -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8066.428170695558!2d106.77774751432587!3d10.85742961783838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276e7ea103df%3A0xb6cf10bb7d719327!2zSFVURUNIIC0gxJDhuqFpIGjhu41jIEPDtG5nIG5naOG7hyBUUC5IQ00gKFRodSBEdWMgQ2FtcHVzKQ!5e0!3m2!1svi!2s!4v" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div>
 </div>
+
+
+<!-- Sử dụng Bootstrap JS và Popper.js (cần cài đặt trước khi sử dụng Bootstrap JS) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

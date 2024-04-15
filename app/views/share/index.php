@@ -5,7 +5,7 @@ include_once 'app/views/share/header.php';
 $categories = $this->productModel->getAllCategories();
 
 // Tính toán số lượng sản phẩm trên mỗi trang
-$itemsPerPage = 6;
+$itemsPerPage = 3;
 
 // Tính tổng số lượng sản phẩm
 $totalProducts = $this->productModel->getTotalProducts();
@@ -43,7 +43,7 @@ $products = $this->productModel->getProductsPaginated($start, $itemsPerPage);
             <!-- Cột danh mục sản phẩm chiếm 20% -->
             <div class="col-md-3">
                 <div class="p-3">
-                    <div class="bg-dark text-white p-3 rounded">
+                    <div class=" text-white p-3 rounded" style="background-color: #198754;">
                         <h5 class="text-center">LOẠI SẢN PHẨM</h5>
                         <ul class="list-unstyled">
                             <?php foreach ($categories as $category): ?>
@@ -75,11 +75,7 @@ $products = $this->productModel->getProductsPaginated($start, $itemsPerPage);
                                     <div class="main-click">
                                         <a href="/php/product/detail/<?= $row['id'] ?>"
                                             class="btn btn-primary">Mua Ngay</a>
-                                        <?php if (SessionHelper::isLoggedIn() && $_SESSION['role'] == 1): ?>
-                                        <a href="/php/product/delete/<?= $row['id'] ?>"
-                                            class="btn btn-danger"
-                                            onclick="return confirm('Bạn có chắc muốn xóa sản phẩm này?')">Xóa</a>
-                                        <?php endif; ?>
+                                        
                                         <button class="btn btn-primary add-to-cart add-to-cart-btn"
                                             onclick="addToCart(<?= $row['id']; ?>)">Thêm vào giỏ hàng</button>
                                     </div>
@@ -94,7 +90,7 @@ $products = $this->productModel->getProductsPaginated($start, $itemsPerPage);
     </div>
 
         <!-- Hiển thị liên kết phân trang -->
-        <div class="pagination justify-content-center">
+        <div class="pagination justify-content-center ptrang">
             <?php for ($i = 1; $i <= $totalPages; $i++): ?>
             <a href="/php?page=<?= $i ?>" class="btn btn-primary btn-lg <?= ($page == $i) ? 'active' : '' ?>"><?= $i ?></a>
             <?php endfor; ?>

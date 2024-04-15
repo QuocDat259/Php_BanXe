@@ -42,7 +42,7 @@ $stmt->execute();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Products</title>
-
+    <link rel="stylesheet" href="/php/app/css/styles.css">
     <!-- Sử dụng Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
@@ -82,7 +82,7 @@ $stmt->execute();
         </div>
 
         <!-- Phân trang -->
-            <ul class="pagination justify-content-center mt-4">
+            <ul class="pagination justify-content-center mt-4 ptrang">
                 <?php for ($i = 1; $i <= $total_pages; $i++): ?>
                     <li class="<?= ($i == $current_page) ? 'active' : ''; ?>">
                         <a class="btn btn-primary" href="/php/search.php?keyword=<?= $keyword ?>&page=<?= $i ?>"><?= $i ?></a>

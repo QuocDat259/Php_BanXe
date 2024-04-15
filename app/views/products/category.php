@@ -1,6 +1,24 @@
 
-<?php include_once 'app/views/share/header.php'; ?>
+<?php
+include_once 'app/views/share/header.php'
+?>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin thanh toán</title>
+    <!-- Sử dụng Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Sử dụng thư viện jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/php/app/css/styles.css">
+
+</head>
+
+<body>
 <div class="container">
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <?php foreach ($products as $product): ?>
@@ -54,4 +72,12 @@
             xhr.send();
         }
     </script>
-<?php include_once 'app/views/share/footer.php'; ?>
+</body>
+
+</html>
+
+
+<?php
+include_once 'app/views/share/footer.php'
+?>
+

@@ -30,13 +30,7 @@ include_once 'app/views/share/header.php'
         <input type="hidden" name="quantity" value="1">
         <button type="submit" class="btn btn-primary add-to-cart add-to-cart-btn btn-cl">Thêm vào giỏ hàng</button>
     </form>
-    <?php
-        if (SessionHelper::isLoggedIn()) {
-            if ($_SESSION['role'] == 1) {
-                echo '<a href="/php/product/edit/' . $product->id . '" class="btn btn-warning" style="padding: 5px 100px; margin: 4px;">Sửa</a>';
-            }
-        }
-    ?>
+    
     </div>
 </div>
 
