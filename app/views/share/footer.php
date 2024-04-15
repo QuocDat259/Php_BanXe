@@ -35,7 +35,7 @@
         <div class="col-md-4">
             <div class=" text-white text-center py-4">
                 <h3>TẢI ỨNG DỤNG NGAY THÔI</h3>
-                <img src="app/image/footer.png" />
+                <img src="https://i.imgur.com/lsmotwt.png" />
             </div>
         </div>
     </div>
