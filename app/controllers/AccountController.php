@@ -158,7 +158,7 @@ class AccountController
     }
     public function editUser($userId)
     {
-        // Retrieve user data by ID
+        // Lấy thông tin người dùng theo ID và truyền nó vào view để hiển thị form chỉnh sửa
         $user = $this->accountModel->getUserById($userId);
 
         if ($user) {
@@ -166,9 +166,10 @@ class AccountController
             include 'app/views/admin/edit_user.php';
         } else {
             // Handle user not found
-            // You can set an error message here and redirect back to the admin index
+            // Có thể set thông báo lỗi ở đây và chuyển hướng về trang index của admin
         }
     }
+
 
     public function updateUser($userId)
     {
@@ -179,11 +180,11 @@ class AccountController
             $email = $_POST['email'] ?? '';
 
             // Update the user
-            $result = $this->accountModel->updateUser($userId, $name, $password, $email);
+            $result = $this->accountModel->updateUser($userId, $username, $password, $email);
 
             if ($result === true) {
                 // User updated successfully, redirect to admin index
-                header("Location: /php/admin/user");
+                header("Location: /php/account/AccountManagement");
                 exit;
             } else {
                 // Handle errors
@@ -199,7 +200,7 @@ class AccountController
 
         if ($result === true) {
             // User deleted successfully, redirect to admin index
-            header("Location: /php/admin/user");
+            header("Location: /php/account/AccountManagement");
             exit;
         } else {
             // Handle errors

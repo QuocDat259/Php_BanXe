@@ -41,8 +41,8 @@
                                         <td><?php echo isset($user['email']) ? $user['email'] : ''; ?></td>
                                         <td><?php echo isset($user['role_id']) ? $user['role_id'] : ''; ?></td>
                                         <td>
-                                            <a href="/php/admin/user/edit/<?php echo isset($user['id']) ? $user['id'] : ''; ?>">Edit</a>
-                                            <a href="/php/admin/user/delete/<?php echo isset($user['id']) ? $user['id'] : ''; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a>
+                                            <a href="/php/account/editUser/<?php echo isset($user['id']) ? $user['id'] : ''; ?>">Edit</a>
+                                            <a href="/php/account/deleteUser/<?php echo isset($user['id']) ? $user['id'] : ''; ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
